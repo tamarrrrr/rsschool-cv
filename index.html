@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<header>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Tamara Fidarova CV</title>
+    <link rel="stylesheet" href="style.css">
+</header>
 <body>
-   CV 
+<main itemscope itemtype="http://schema.org/Person">    
+    <header class="typing-wrapper">
+      <h1 itemprop="name" class="typing">Tamara Fidarova</h1>
+      <a href="https://github.com/tamarrrrr/" itemprop="url" class="github"">GitHub</a>      
+    </header>
+    <div class="inner">
+    <section>
+        <h2>Контакты</h2>        
+        <span class="pl2em" itemprop="email"><a href="mailto:masago@yandex.ru">masago@yandex.ru</a></span>         
+    </section>
+    <section>
+        <h2>О себе</h2>
+        <pre>        
+   I can't tell you how
+       I knew - but I did know that I had crossed            
+       The border. Everything I loved was lost            
+           But no aorta could report regret.            
+           A sun of rubber was convulsed and set;            
+       And blood-black nothingness began to spin            
+       A system of cells interlinked within            
+           Cells interlinked within cells interlinked            
+           Within one stem. And dreadfully distinct            
+   Against the dark, a tall white fountain played.        
+        </pre>
+    </section>
+    <section>
+        <h2>Навыки</h2>
+        <ul class="pl3em">
+            <li>ASP.NET</li>
+            <li>C#</li>
+            <li>SQL</li>
+            <li>Azure DevOps</li>
+            <li>Project Management</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Опыт работы</h2>
+        <span class="pl2em">n/a</span>
+    </section>
+    <section>
+        <h2>Примеры кода</h2>        
+        <details class="pl2em">
+          <summary>
+            Своего нет, но очень нравится вот этот: 
+          </summary>        
+            <pre>
+                <div>
+                    <code>
+    var rows = Enumerable.Range(1, 3); //1,2,3
+    var columns = new string[] { "A", "B", "C" };
+                          
+    var querySyntax = from row in rows
+                      from col in columns
+                      select $"cell [{row}, {col}]";
+                       
+    var methodSyntax = rows.SelectMany(row => columns, (r, c) => $"cell [{r}, {c}]");</code>  
+                </div>                        
+            </pre>
+        </details>
+      </section>
+    <section>
+      <h2>Образование</h2>        
+          <span itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+            <a class="pl2em" href="https://www.skgmi-gtu.ru/ru-ru/" itemprop="url">
+            <span itemprop="name">Северо-Кавказский Государственный Горно Металлургический Институт</span></a>, 
+          <time>2002 - 2007</time>
+    </section>
+    <section>
+        <h2>Английский Язык</h2>
+        <span class="pl2em">Уровень владения: C1</span>
+    </section> 
+    </div>     
+  </main>
+  <footer>
+
+  </footer>
 </body>
 </html>
