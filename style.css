@@ -1,3 +1,72 @@
 body {
-  width:80%;
+  font-family: monospace;
+  background-image: url("images/br.jpg");
+  background-color: #cccccc;  
+}
+
+main {
+  background-color: #cccccc50;
+  width:50%;
+  margin: auto;
+}
+
+section {
+   padding-left: 15px;
+}
+
+.github {  
+  opacity: 0;  
+  animation: fadeIn 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+
+.inner {
+  padding: 20px;
+  opacity: 0;  
+  animation: fadeIn 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.typing-wrapper {  
+  display: grid;
+  place-items: center;
+}
+
+.typing {
+  width: 15ch;
+  animation: typing 2s steps(15), blink .5s step-end;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;  
+  font-size: 3em;
+}
+
+.pl2em
+{
+  padding-left: 2em;
+}
+
+.pl3em
+{
+  padding-left: 3em;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
